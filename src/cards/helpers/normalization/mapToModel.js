@@ -1,0 +1,24 @@
+const mapCardToModel = (card) => {
+  return {
+    title: card?.title,
+    subtitle: card?.subtitle,
+    description: card?.description,
+    phone: card?.phone,
+    email: card?.email,
+    webUrl: card?.web,
+    imageUrl: card?.image.url,
+    imageAlt: card?.image.alt,
+    state: card?.address.state,
+    country: card?.address.country,
+    city: card?.address.city,
+    street: card?.address.street,
+    houseNumber: card?.address.houseNumber,
+    zip: card?.address.zip,
+    bizNumber: card?.bizNumber,
+    // _id: card?._id,
+    // likes: card?.cardLikes,
+
+  };
+};
+
+export default mapCardToModel;
